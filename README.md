@@ -30,12 +30,13 @@ The proposed method follows a **three-step** pipeline:
 
 The model is trained using **identity loss** and **triplet loss** for robust feature learning.
 
-![media/Frame_work.PNG](#) (*Add a relevant image or diagram from the paper*)
+![Framework](media/Frame_work.PNG) (*Add a relevant image or diagram from the paper*)
 
 ## 📊 Dataset
 We conduct experiments on the **FAPR dataset**, which consists of pedestrian tracklets automatically extracted from videos captured by two non-overlapping cameras. Additionally, we evaluate the method on standard benchmarks like **VIPeR** and **Market-1501-Partial**.
 
 ## 📊 Results
+### Single shot
 ### Table 1: Performance Comparison on VIPeR, Market-1501-Partial, and FAPR datasets
 | Method \ Matching rates | VIPeR (R-1) | VIPeR (R-5) | VIPeR (R-10) | Market-1501-Partial (R-1) | Market-1501-Partial (R-5) | Market-1501-Partial (R-10) | FAPR (R-1) | FAPR (R-5) | FAPR (R-10) |
 |----------------------|------------|------------|------------|----------------------|----------------------|----------------------|------------|------------|------------|
@@ -46,6 +47,7 @@ We conduct experiments on the **FAPR dataset**, which consists of pedestrian tra
 | Global+Local (DMLI) | 40.9 | 72.8 | 82.9 | 77.2 | 89.3 | 92.5 | 61.3 | 86.5 | 91.6 |
 | Global+Local (EMD) | **47.8** | **76.6** | 86.5 | **78.0** | 89.1 | **92.6** | **65.8** | 89.4 | 95.8 |
 
+### Multi shot
 ### Table 2: Performance Comparison on FAPR Dataset
 | Probe | Gallery | Baseline | Average |
 |-------|---------|----------|---------|
