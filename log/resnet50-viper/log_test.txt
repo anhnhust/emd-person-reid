@@ -1,0 +1,39 @@
+==========
+Args:Namespace(arch='resnet50', cuhk03_classic_split=False, cuhk03_labeled=False, dataset='viper', eval_step=-1, evaluate=True, gamma=0.1, gpu_devices='0', height=384, htri_only=False, labelsmooth=False, lr=0.0002, margin=0.3, max_epoch=300, num_instances=4, optim='adam', print_freq=10, reranking=False, resume='/home/anhhoang/New_Term/AlignedReID/log/checkpoint_ep20.pth.tar', root='data', save_dir='log/resnet50-viper', seed=1, split_id=0, start_epoch=0, start_eval=0, stepsize=150, test_batch=32, test_distance='global_local', train_batch=32, unaligned=False, use_cpu=False, use_metric_cuhk03=False, weight_decay=0.0005, width=256, workers=4)
+==========
+Currently using GPU 0
+Initializing dataset viper
+=> Viper loaded
+Dataset statistics:
+  ------------------------------
+  subset   | # ids | # images
+  ------------------------------
+  train    |   316 |      632
+  query    |   316 |      316
+  gallery  |   316 |      316
+  ------------------------------
+  total    |   632 |     1264
+  ------------------------------
+Initializing model: resnet50
+Model size: 25.06937M
+Loading checkpoint from '/home/anhhoang/New_Term/AlignedReID/log/checkpoint_ep20.pth.tar'
+Evaluate only
+Extracted features for query set, obtained 316-by-2048 matrix
+Extracted features for gallery set, obtained 316-by-2048 matrix
+==> BatchTime(s)/BatchSize(img): 0.179/32
+Only using global branch
+Computing local distance...
+Matrix part (1, 1) / (2, 2), +0.11s, total 0.11s
+[F[KMatrix part (1, 2) / (2, 2), +0.09s, total 0.20s
+[F[KMatrix part (2, 1) / (2, 2), +0.09s, total 0.29s
+[F[KMatrix part (2, 2) / (2, 2), +0.17s, total 0.46s
+Using global and local branches
+Computing CMC and mAP
+Results ----------
+mAP: 52.5%
+CMC curve
+Rank-1  : 40.5%
+Rank-5  : 67.1%
+Rank-10 : 79.7%
+Rank-20 : 89.9%
+------------------
