@@ -7,7 +7,7 @@ This repository contains the implementation of **EMD-based local matching for oc
 **Authors:** Hoang-Anh Nguyen, Thuy-Binh Nguyen, Hong-Quan Nguyen, Thi-Lan Le  
 **Journal:** Machine Learning with Applications  
 
-📄 [Read the Paper](#) (https://www.sciencedirect.com/science/article/pii/S2666827025000465)
+📄 [Read the Paper](https://www.sciencedirect.com/science/article/pii/S2666827025000465)
 
 ## 🔥 Highlights
 - **Multi-shot Person Re-ID:** Our framework extends single-shot Re-ID to a multiple-shot scenario by utilizing tracklet-based feature fusion.
